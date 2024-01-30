@@ -38,14 +38,14 @@ public class PhoneBook {
         List<Map.Entry<String, List<String>>> entries = new ArrayList<>(phoneBook.entrySet());
 
         // Сортировка списка записей по убыванию числа телефонов
-        Collections.sort(entries, new Comparator<Map.Entry<String, List<String>>>() {
+        entries.sort(new Comparator<Map.Entry<String, List<String>>>() {
             @Override
             public int compare(Map.Entry<String, List<String>> entry1, Map.Entry<String, List<String>> entry2) {
                 return entry2.getValue().size() - entry1.getValue().size();
             }
         });
 
-        // Выводим отсортированной телефонной книги
+        // Выводим отсортированную телефонную книгу
         for (Map.Entry<String, List<String>> entry : entries) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
