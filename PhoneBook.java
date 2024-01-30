@@ -10,8 +10,8 @@ public class PhoneBook {
         addContact(phoneBook, "Иванов", "123456789");
         addContact(phoneBook, "Петров", "987654321");
         addContact(phoneBook, "Сидоров", "456789123");
-        addContact(phoneBook, "Иванов", "111111111");
-        addContact(phoneBook, "Петров", "222222222");
+        addContact(phoneBook, "Иванов", "657387393");
+        addContact(phoneBook, "Петров", "745845458");
 
         // Выводим телефонную книгу, отсортированную по убыванию числа телефонов
         printPhoneBook(phoneBook);
